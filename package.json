@@ -7,7 +7,7 @@
     "FE-start": "vite",
     "FE-build": "tsc && vite build",
     "test": "vitest",
-    "BE-start": "ts-node --esm ./json-server/index.ts",
+    "BE-start": "tsx ./json-server/index.ts",
     "start": "concurrently --kill-others \"npm:BE-start\" \"npm:FE-start\""
   },
   "dependencies": {
@@ -31,6 +31,7 @@
     "eslint-plugin-react": "7.32.2",
     "eslint-plugin-react-hooks": "4.6.0",
     "jsdom": "22.1.0",
+    "tsx": "^4.20.5",
     "vite": "4.3.9",
     "vite-plugin-svgr": "3.2.0",
     "vitest": "0.32.2"
