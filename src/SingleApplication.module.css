@@ -51,3 +51,43 @@
 .emailLink:visited {
   color: #0066cc;
 }
+
+@media (max-width: 768px) {
+  .SingleApplication {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 16px;
+  }
+
+  .cell {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  .cell:last-child {
+    border-bottom: none;
+  }
+
+  .cell:not(:last-child) {
+    padding-right: 0;
+  }
+
+  .cell sub {
+    margin-bottom: 0;
+    margin-right: 16px;
+    min-width: 100px;
+    flex-shrink: 0;
+  }
+
+  .value {
+    text-align: right;
+    flex: 1;
+  }
+
+  .emailLink {
+    text-align: right;
+  }
+}

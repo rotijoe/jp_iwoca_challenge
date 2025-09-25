@@ -6,3 +6,4 @@
 4. Apply useApplications to fetch and loadMore applications on the page.
 5. Format data using helpers
 6. Apply desktop styles
+7. Apply mobile styles
