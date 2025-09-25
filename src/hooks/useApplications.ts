@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 interface Application {
-  guid: string
+  id: string
   loan_amount: number
   first_name: string
   last_name: string

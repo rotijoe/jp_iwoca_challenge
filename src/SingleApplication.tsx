@@ -1,5 +1,4 @@
-import React from "react";
-import styles from "./SingleApplication.module.css";
+import styles from './SingleApplication.module.css'
 
 const SingleApplication = ({ application }) => {
   return (
@@ -29,7 +28,7 @@ const SingleApplication = ({ application }) => {
         {application.expiry_date}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default SingleApplication;
+export default SingleApplication
