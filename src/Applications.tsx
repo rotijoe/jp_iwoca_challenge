@@ -34,8 +34,8 @@ const Applications = () => {
   }
 
   return (
-    <div className={styles.Applications}>
-      {renderedApplications()}
+    <div className={styles.applicationsContainer}>
+      <div className={styles.applications}>{renderedApplications()}</div>
       {renderLoadMoreButton()}
       {renderError()}
     </div>
