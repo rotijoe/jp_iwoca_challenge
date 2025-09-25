@@ -1,12 +1,22 @@
-export const getSingleApplicationFixture = [
+export const mockApplications = [
   {
-    guid: "8a8f6cbc-77a1-4086-8968-a57816f4ff60",
-    loan_amount: 37597,
-    first_name: "Miles",
-    last_name: "Espinoza",
-    company: "Qnekt",
-    email: "milesespinoza@qnekt.com",
-    date_created: "2021-08-10",
-    expiry_date: "2021-12-02",
+    guid: '1',
+    loan_amount: 1000,
+    first_name: 'Bakayo',
+    last_name: 'Saka',
+    company: 'Company 1',
+    email: 'bakayo@test.com',
+    date_created: '2025-01-01',
+    expiry_date: '2025-12-31'
   },
-];
+  {
+    guid: '2',
+    loan_amount: 10000000,
+    first_name: 'Mikel',
+    last_name: 'Arteta',
+    company: 'Company 2',
+    email: 'mikel@test.com',
+    date_created: '2025-02-01',
+    expiry_date: '2025-12-31'
+  }
+]
