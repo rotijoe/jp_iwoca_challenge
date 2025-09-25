@@ -1,3 +1,8 @@
+import {
+  formatCurrency,
+  formatDate,
+  formatName
+} from './helpers/singleApplication'
 import styles from './SingleApplication.module.css'
 
 const SingleApplication = ({ application }) => {
@@ -5,27 +10,39 @@ const SingleApplication = ({ application }) => {
     <div className={styles.SingleApplication}>
       <div className={styles.cell}>
         <sub>Company</sub>
-        {application.company}
+        <div className={styles.value}>{application.company}</div>
       </div>
       <div className={styles.cell}>
         <sub>Name</sub>
-        {application.first_name} {application.last_name}
+        <div className={styles.value}>
+          {formatName(application.first_name, application.last_name)}
+        </div>
       </div>
       <div className={styles.cell}>
         <sub>Email</sub>
-        {application.email}
+        <div className={styles.value}>
+          <a href={`mailto:${application.email}`} className={styles.emailLink}>
+            {application.email}
+          </a>
+        </div>
       </div>
       <div className={styles.cell}>
-        <sub>Loan Amount</sub>
-        {application.loan_amount}
+        <sub>Loan amount</sub>
+        <div className={styles.value}>
+          {formatCurrency(application.loan_amount)}
+        </div>
       </div>
       <div className={styles.cell}>
-        <sub>Application Date</sub>
-        {application.date_created}
+        <sub>Application date</sub>
+        <div className={styles.value}>
+          {formatDate(application.date_created)}
+        </div>
       </div>
       <div className={styles.cell}>
         <sub>Expiry date</sub>
-        {application.expiry_date}
+        <div className={styles.value}>
+          {formatDate(application.expiry_date)}
+        </div>
       </div>
     </div>
   )
