@@ -7,3 +7,15 @@
 5. Format data using helpers
 6. Apply desktop styles
 7. Apply mobile styles
+
+### Additional Comment
+
+This is my first Vite project, I'm not 100% sure on on the file architecture.
+
+If I had a bit more time:
+
+- Improve file architecture.
+- I would set the TS to strict and add in all the relevant types.
+- Use env vars
+- Add loading state for the initial list loading
+- Add aria-labels
